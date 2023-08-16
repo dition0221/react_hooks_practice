@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 
+// dummy Data
 const content = [
   {
     tab: "Section 1",
@@ -27,7 +28,7 @@ const useTabs = (initialTab, allTabs) => {
   };
 };
 
-export default function UseTabs() {
+export default function App() {
   const { currentItem, changeItem } = useTabs(0, content);
   return (
     <div className="App">

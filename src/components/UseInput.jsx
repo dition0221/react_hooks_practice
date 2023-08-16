@@ -17,7 +17,7 @@ const useInput = (initialValue, validator) => {
   return { value, onChange };
 };
 
-export default function UseInput() {
+export default function App() {
   const maxLen = (value) => value.length <= 10;
   const name = useInput("Mr.", maxLen);
   return (

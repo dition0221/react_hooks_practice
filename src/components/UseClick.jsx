@@ -17,7 +17,7 @@ const useClick = (onClick) => {
   return typeof onClick !== "function" ? element : undefined;
 };
 
-export default function UseClick() {
+export default function App() {
   const sayHello = () => console.log("Say Hello !");
   const title = useClick(sayHello);
   return (

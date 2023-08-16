@@ -12,7 +12,7 @@ const useTitle = (initialTitle) => {
   return setTitle;
 };
 
-export default function UseTitle() {
+export default function App() {
   const titleUpdater = useTitle("Loading...");
   setTimeout(() => titleUpdater("Home"), 3000);
   return <div></div>;
